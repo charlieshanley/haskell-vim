@@ -7,8 +7,8 @@
 
 if version < 600
   syn clear
-" elseif exists("b:current_syntax") && g:current_syntax != "haskell"
-"   finish
+elseif exists("b:current_syntax") && b:current_syntax != "haskell"
+  finish
 endif
 
 if get(g:, 'haskell_backpack', 0)
